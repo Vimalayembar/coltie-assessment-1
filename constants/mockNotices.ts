@@ -9,43 +9,8 @@ export interface Notice {
   category: string;
 }
 
-export const mockNotices: Notice[] = [
-  {
-    id: '1',
-    title: 'Mid-term Examination Schedule',
-    subtitle: 'Important Update',
-    description: 'The mid-term examinations will commence from next week. Please check your respective examination schedules. All students are required to bring their ID cards and hall tickets. The examination will be conducted in strict accordance with the university guidelines.',
-    date: '2024-04-27T10:00:00',
-    hasAttachment: true,
-    isUnread: true,
-    category: 'Academics'
-  },
-  {
-    id: '2',
-    title: 'Library Maintenance Notice',
-    description: 'The central library will be undergoing maintenance work this weekend. All services will be temporarily unavailable. We apologize for any inconvenience caused.',
-    date: '2024-04-26T15:30:00',
-    hasAttachment: false,
-    isUnread: false,
-    category: 'Academics'
-  },
-  {
-    id: '3',
-    title: 'Sports Day Event',
-    subtitle: 'Annual Sports Meet',
-    description: 'The annual sports day will be held next month. All students are encouraged to participate. Registration forms are available at the sports department.',
-    date: '2024-04-25T09:00:00',
-    hasAttachment: true,
-    isUnread: true,
-    category: 'Events'
-  },
-  {
-    id: '4',
-    title: 'Fee Payment Deadline',
-    description: 'This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.',
-    date: '2024-04-24T14:00:00',
-    hasAttachment: false,
-    isUnread: false,
-    category: 'Finance'
-  }
-]; 
+// Import the mock notices from the JSON file
+import mockNotices from './mockNotices.json';
+
+export { mockNotices };
+
