@@ -9,11 +9,13 @@ import {
   Text,
   TextInput,
   View,
+  Dimensions,
 } from 'react-native';
 import { NoticeCard } from '../components/NoticeCard';
 import { mockNotices, Notice } from '../constants/mockNotices';
 
 const ITEMS_PER_PAGE = 5;
+const TOAST_WIDTH = Math.min(Dimensions.get('window').width - 32, 350);
 
 export default function NoticesScreen() {
   const { category } = useLocalSearchParams<{ category: string }>();
@@ -160,16 +162,25 @@ const styles = StyleSheet.create({
   },
   toast: {
     position: 'absolute',
-    top: 40,
-    left: 20,
-    right: 20,
-    backgroundColor: 'rgba(0, 0, 0, 0.8)',
-    padding: 12,
-    borderRadius: 8,
+    top: 32,
+    left: '50%',
+    transform: [{ translateX: -(TOAST_WIDTH / 2) }],
+    width: TOAST_WIDTH,
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    paddingVertical: 16,
+    paddingHorizontal: 24,
     alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 8,
+    elevation: 4,
+    zIndex: 1000,
   },
   toastText: {
-    color: 'white',
-    fontSize: 14,
+    color: '#222',
+    fontSize: 16,
+    fontWeight: '500',
   },
 });
