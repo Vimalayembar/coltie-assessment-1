@@ -3,7 +3,7 @@
       "id": "1",
       "title": "Mid-term Examination Schedule",
       "subtitle": "Important Update",
-      "description": "The mid-term examinations will commence from next week. Please check your respective examination schedules. All students are required to bring their ID cards and hall tickets. The examination will be conducted in strict accordance with the university guidelines.",
+      "description": "The mid-term examinations will commence from next week. Please check your respective examination schedules. All students are required to bring their ID cards and hall tickets.",
       "date": "2024-04-27T10:00:00",
       "hasAttachment": true,
       "isUnread": true,
@@ -12,7 +12,7 @@
     {
       "id": "2",
       "title": "Library Maintenance Notice",
-      "description": "The central library will be undergoing maintenance work this weekend. All services will be temporarily unavailable. We apologize for any inconvenience caused.",
+      "description": "The central library will be undergoing maintenance work this weekend. All services will be temporarily unavailable.",
       "date": "2024-04-26T15:30:00",
       "hasAttachment": false,
       "isUnread": false,
@@ -38,85 +38,123 @@
       "category": "Finance"
     },
     {
-        "id": "5",
-        "title": "Fee Payment Deadline",
-        "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
-        "date": "2024-04-24T14:00:00",
-        "hasAttachment": false,
-        "isUnread": false,
-        "category": "Finance"
-      },
-      {
-        "id": "6",
-        "title": "Fee Payment Deadline",
-        "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
-        "date": "2024-04-24T14:00:00",
-        "hasAttachment": false,
-        "isUnread": false,
-        "category": "Finance"
-      },
-      {
-        "id": "7",
-        "title": "Fee Payment Deadline",
-        "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
-        "date": "2024-04-24T14:00:00",
-        "hasAttachment": false,
-        "isUnread": false,
-        "category": "Finance"
-      },
-      {
-        "id": "8",
-        "title": "Fee Payment Deadline",
-        "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
-        "date": "2024-04-24T14:00:00",
-        "hasAttachment": false,
-        "isUnread": false,
-        "category": "Finance"
-      },
-      {
-        "id": "9",
-        "title": "Fee Payment Deadline",
-        "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
-        "date": "2024-04-24T14:00:00",
-        "hasAttachment": false,
-        "isUnread": false,
-        "category": "Finance"
-      },
-      {
-        "id": "10",
-        "title": "Fee Payment Deadline",
-        "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
-        "date": "2024-04-24T14:00:00",
-        "hasAttachment": false,
-        "isUnread": false,
-        "category": "Finance"
-      },
-      {
+      "id": "5",
+      "title": "Career Fair 2024",
+      "subtitle": "Opportunity for Students",
+      "description": "The annual career fair will be held next month. Various companies will be participating. Bring your updated resumes.",
+      "date": "2024-04-23T11:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Events"
+    },
+    {
+      "id": "6",
+      "title": "Hostel Rules Update",
+      "description": "Please note the updated hostel rules. Curfew timing has been changed to 10 PM. All students must follow the new guidelines.",
+      "date": "2024-04-22T16:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Hostel"
+    },
+    {
+      "id": "7",
+      "title": "Scholarship Application",
+      "description": "Applications for the merit-based scholarship are now open. Last date to apply is next month.",
+      "date": "2024-04-21T13:00:00",
+      "hasAttachment": true,
+      "isUnread": false,
+      "category": "Finance"
+    },
+    {
+      "id": "8",
+      "title": "Cultural Fest Registration",
+      "subtitle": "Annual Cultural Festival",
+      "description": "Registration for the annual cultural festival is now open. Various competitions and events will be organized.",
+      "date": "2024-04-20T10:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Events"
+    },
+    {
+      "id": "9",
+      "title": "Campus WiFi Upgrade",
+      "description": "The campus WiFi network will be upgraded this weekend. Services may be intermittent during the maintenance period.",
+      "date": "2024-04-19T15:00:00",
+      "hasAttachment": false,
+      "isUnread": false,
+      "category": "IT Services"
+    },
+    {
+      "id": "10",
+      "title": "Research Paper Submission",
+      "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
+      "date": "2024-04-18T14:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Academics"
+    },
+    {
         "id": "11",
-        "title": "Fee Payment Deadline",
-        "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
-        "date": "2024-04-24T14:00:00",
-        "hasAttachment": false,
-        "isUnread": false,
-        "category": "Finance"
+        "title": "Research Paper Submission",
+        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
+        "date": "2024-04-18T14:00:00",
+        "hasAttachment": true,
+        "isUnread": true,
+        "category": "Academics"
       },
       {
         "id": "12",
-        "title": "Fee Payment Deadline",
-        "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
-        "date": "2024-04-24T14:00:00",
-        "hasAttachment": false,
-        "isUnread": false,
-        "category": "Finance"
+        "title": "Research Paper Submission",
+        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
+        "date": "2024-04-18T14:00:00",
+        "hasAttachment": true,
+        "isUnread": true,
+        "category": "Academics"
       },
       {
         "id": "13",
-        "title": "Fee Payment Deadline",
-        "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
-        "date": "2024-04-24T14:00:00",
-        "hasAttachment": false,
-        "isUnread": false,
-        "category": "Finance"
+        "title": "Research Paper Submission",
+        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
+        "date": "2024-04-18T14:00:00",
+        "hasAttachment": true,
+        "isUnread": true,
+        "category": "Academics"
+      },
+      {
+        "id": "14",
+        "title": "Research Paper Submission",
+        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
+        "date": "2024-04-18T14:00:00",
+        "hasAttachment": true,
+        "isUnread": true,
+        "category": "Academics"
+      },
+      {
+        "id": "15",
+        "title": "Research Paper Submission",
+        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
+        "date": "2024-04-18T14:00:00",
+        "hasAttachment": true,
+        "isUnread": true,
+        "category": "Academics"
+      },
+      {
+        "id": "16",
+        "title": "Research Paper Submission",
+        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
+        "date": "2024-04-18T14:00:00",
+        "hasAttachment": true,
+        "isUnread": true,
+        "category": "Academics"
+      },
+      {
+        "id": "17",
+        "title": "Research Paper Submission",
+        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
+        "date": "2024-04-18T14:00:00",
+        "hasAttachment": true,
+        "isUnread": true,
+        "category": "Academics"
       }
   ]
   
