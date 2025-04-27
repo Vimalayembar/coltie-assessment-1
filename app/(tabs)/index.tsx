@@ -67,6 +67,15 @@ export default function HomeScreen() {
         >
           Go to About screen
         </Link>
+        <Link
+          href="/notices?category=Academics"
+          style={[
+            styles.button,
+            { color: theme === "light" ? Colors.light.text : Colors.dark.text },
+          ]}
+        >
+          Go to Notices (Academics)
+        </Link>
       </ThemedView>
     </ParallaxScrollView>
   );
