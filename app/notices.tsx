@@ -22,23 +22,6 @@ export default function NoticesScreen() {
   const [searchQuery, setSearchQuery] = useState('');
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
-  const toastOpacity = useRef(new Animated.Value(0)).current;
-
-  const showToastMessage = () => {
-    Animated.sequence([
-      Animated.timing(toastOpacity, {
-        toValue: 1,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.delay(1000),
-      Animated.timing(toastOpacity, {
-        toValue: 0,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-    ]).start();
-  };
 
   const filteredNotices = mockNotices.filter(notice =>
     (!category || notice.category === category) &&
@@ -50,11 +33,6 @@ export default function NoticesScreen() {
 
   const handleLoadMore = useCallback(() => {
     if (loading || paginatedNotices.length >= filteredNotices.length) return;
-
-    // Only show toast if we're not on the first page
-    if (page > 1) {
-      showToastMessage();
-    }
     
     setLoading(true);
     
@@ -77,8 +55,9 @@ export default function NoticesScreen() {
   const renderFooter = () => {
     if (!loading) return null;
     return (
-      <View style={styles.footer}>
-        <ActivityIndicator size="small" color="#0000ff" />
+      <View style={styles.footerRow}>
+        <ActivityIndicator size="small" color="#3B82F6" />
+        <Text style={styles.footerText}>Fetching more notices…</Text>
       </View>
     );
   };
@@ -111,10 +90,6 @@ export default function NoticesScreen() {
         ListFooterComponent={renderFooter}
         contentContainerStyle={styles.listContent}
       />
-
-      <Animated.View style={[styles.toast, { opacity: toastOpacity }]}>
-        <Text style={styles.toastText}>More notices loaded!</Text>
-      </Animated.View>
     </View>
   );
 }
@@ -160,27 +135,17 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     alignItems: 'center',
   },
-  toast: {
-    position: 'absolute',
-    top: 32,
-    left: '50%',
-    transform: [{ translateX: -(TOAST_WIDTH / 2) }],
-    width: TOAST_WIDTH,
-    backgroundColor: '#fff',
-    borderRadius: 12,
-    paddingVertical: 16,
-    paddingHorizontal: 24,
+  footerRow: {
+    flexDirection: 'row',
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.08,
-    shadowRadius: 8,
-    elevation: 4,
-    zIndex: 1000,
+    justifyContent: 'center',
+    paddingVertical: 20,
+    gap: 12,
   },
-  toastText: {
-    color: '#222',
+  footerText: {
     fontSize: 16,
+    color: '#222',
+    marginLeft: 10,
     fontWeight: '500',
   },
 });
