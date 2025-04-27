@@ -29,7 +29,7 @@ export default function NoticesScreen() {
         duration: 300,
         useNativeDriver: true,
       }),
-      Animated.delay(1000), // visible for 1 sec
+      Animated.delay(1000),
       Animated.timing(toastOpacity, {
         toValue: 0,
         duration: 300,
@@ -49,13 +49,19 @@ export default function NoticesScreen() {
   const handleLoadMore = useCallback(() => {
     if (loading || paginatedNotices.length >= filteredNotices.length) return;
 
-    setLoading(true); // Only spinner starts
+    // Only show toast if we're not on the first page
+    if (page > 1) {
+      showToastMessage();
+    }
+    
+    setLoading(true);
+    
+    // Simulate API call delay
     setTimeout(() => {
-      setPage(prev => prev + 1); // Load more notices
-      setLoading(false); // Stop spinner
-      showToastMessage(); // Show toast AFTER loading finished
+      setPage(prev => prev + 1);
+      setLoading(false);
     }, 1000);
-  }, [loading, paginatedNotices.length, filteredNotices.length]);
+  }, [loading, paginatedNotices.length, filteredNotices.length, page]);
 
   const renderItem = ({ item }: { item: Notice }) => (
     <NoticeCard

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Notice } from '../constants/mockNotices';
@@ -9,6 +9,8 @@ interface NoticeCardProps {
 }
 
 export const NoticeCard: React.FC<NoticeCardProps> = ({ notice, onPress }) => {
+  const [isRead, setIsRead] = useState(false);
+
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', {
@@ -25,12 +27,17 @@ export const NoticeCard: React.FC<NoticeCardProps> = ({ notice, onPress }) => {
     return words.slice(0, maxLines * 10).join(' ') + '...';
   };
 
+  const handlePress = () => {
+    setIsRead(true);
+    onPress();
+  };
+
   return (
-    <TouchableOpacity style={styles.card} onPress={onPress}>
+    <TouchableOpacity style={styles.card} onPress={handlePress}>
       <View style={styles.header}>
         <Text style={styles.title}>{notice.title}</Text>
-        {notice.isUnread && (
-          <View style={styles.unreadIndicator} />
+        {notice.isUnread && !isRead && (
+          <Ionicons name="ellipse" size={12} color="#FF69B4" />
         )}
       </View>
       
@@ -79,13 +86,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
     flex: 1,
-  },
-  unreadIndicator: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    backgroundColor: '#FF69B4',
-    marginLeft: 8,
   },
   subtitle: {
     fontSize: 14,

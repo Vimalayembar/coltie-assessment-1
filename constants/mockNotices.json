@@ -12,10 +12,11 @@
     {
       "id": "2",
       "title": "Library Maintenance Notice",
-      "description": "The central library will be undergoing maintenance work this weekend. All services will be temporarily unavailable.",
+      "subtitle": "Service Interruption",
+      "description": "The central library will be undergoing maintenance work this weekend. All services will be temporarily unavailable. We apologize for any inconvenience caused.",
       "date": "2024-04-26T15:30:00",
-      "hasAttachment": false,
-      "isUnread": false,
+      "hasAttachment": true,
+      "isUnread": true,
       "category": "Academics"
     },
     {
@@ -31,10 +32,11 @@
     {
       "id": "4",
       "title": "Fee Payment Deadline",
+      "subtitle": "Important Reminder",
       "description": "This is a reminder that the last date for fee payment is approaching. Please ensure timely payment to avoid any late fees.",
       "date": "2024-04-24T14:00:00",
-      "hasAttachment": false,
-      "isUnread": false,
+      "hasAttachment": true,
+      "isUnread": true,
       "category": "Finance"
     },
     {
@@ -50,6 +52,7 @@
     {
       "id": "6",
       "title": "Hostel Rules Update",
+      "subtitle": "New Guidelines",
       "description": "Please note the updated hostel rules. Curfew timing has been changed to 10 PM. All students must follow the new guidelines.",
       "date": "2024-04-22T16:00:00",
       "hasAttachment": true,
@@ -59,10 +62,11 @@
     {
       "id": "7",
       "title": "Scholarship Application",
+      "subtitle": "Merit-based Awards",
       "description": "Applications for the merit-based scholarship are now open. Last date to apply is next month.",
       "date": "2024-04-21T13:00:00",
       "hasAttachment": true,
-      "isUnread": false,
+      "isUnread": true,
       "category": "Finance"
     },
     {
@@ -78,15 +82,17 @@
     {
       "id": "9",
       "title": "Campus WiFi Upgrade",
+      "subtitle": "Network Maintenance",
       "description": "The campus WiFi network will be upgraded this weekend. Services may be intermittent during the maintenance period.",
       "date": "2024-04-19T15:00:00",
-      "hasAttachment": false,
-      "isUnread": false,
+      "hasAttachment": true,
+      "isUnread": true,
       "category": "IT Services"
     },
     {
       "id": "10",
       "title": "Research Paper Submission",
+      "subtitle": "Conference Deadline",
       "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
       "date": "2024-04-18T14:00:00",
       "hasAttachment": true,
@@ -94,67 +100,74 @@
       "category": "Academics"
     },
     {
-        "id": "11",
-        "title": "Research Paper Submission",
-        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
-        "date": "2024-04-18T14:00:00",
-        "hasAttachment": true,
-        "isUnread": true,
-        "category": "Academics"
-      },
-      {
-        "id": "12",
-        "title": "Research Paper Submission",
-        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
-        "date": "2024-04-18T14:00:00",
-        "hasAttachment": true,
-        "isUnread": true,
-        "category": "Academics"
-      },
-      {
-        "id": "13",
-        "title": "Research Paper Submission",
-        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
-        "date": "2024-04-18T14:00:00",
-        "hasAttachment": true,
-        "isUnread": true,
-        "category": "Academics"
-      },
-      {
-        "id": "14",
-        "title": "Research Paper Submission",
-        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
-        "date": "2024-04-18T14:00:00",
-        "hasAttachment": true,
-        "isUnread": true,
-        "category": "Academics"
-      },
-      {
-        "id": "15",
-        "title": "Research Paper Submission",
-        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
-        "date": "2024-04-18T14:00:00",
-        "hasAttachment": true,
-        "isUnread": true,
-        "category": "Academics"
-      },
-      {
-        "id": "16",
-        "title": "Research Paper Submission",
-        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
-        "date": "2024-04-18T14:00:00",
-        "hasAttachment": true,
-        "isUnread": true,
-        "category": "Academics"
-      },
-      {
-        "id": "17",
-        "title": "Research Paper Submission",
-        "description": "Last date for research paper submission for the annual conference is approaching. Please submit your papers before the deadline.",
-        "date": "2024-04-18T14:00:00",
-        "hasAttachment": true,
-        "isUnread": true,
-        "category": "Academics"
-      }
+      "id": "11",
+      "title": "Guest Lecture Series",
+      "subtitle": "Industry Experts",
+      "description": "A series of guest lectures by industry experts will be conducted next week. All students are encouraged to attend.",
+      "date": "2024-04-17T11:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Academics"
+    },
+    {
+      "id": "12",
+      "title": "Campus Cleanup Drive",
+      "subtitle": "Environmental Initiative",
+      "description": "Join us for the monthly campus cleanup drive. All volunteers will receive certificates of participation.",
+      "date": "2024-04-16T09:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Events"
+    },
+    {
+      "id": "13",
+      "title": "Student Council Elections",
+      "subtitle": "Voting Day",
+      "description": "Student council elections will be held tomorrow. All students are requested to cast their votes.",
+      "date": "2024-04-15T10:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Events"
+    },
+    {
+      "id": "14",
+      "title": "Cafeteria Menu Update",
+      "subtitle": "New Food Options",
+      "description": "The cafeteria menu has been updated with new healthy food options. Check out the new additions.",
+      "date": "2024-04-14T12:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "General"
+    },
+    {
+      "id": "15",
+      "title": "Workshop on AI",
+      "subtitle": "Technology Session",
+      "description": "A workshop on Artificial Intelligence will be conducted next week. Limited seats available.",
+      "date": "2024-04-13T14:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Academics"
+    },
+    {
+      "id": "16",
+      "title": "Library Book Sale",
+      "subtitle": "Annual Clearance",
+      "description": "The annual library book sale will be held this weekend. Great discounts on various books.",
+      "date": "2024-04-12T11:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Academics"
+    },
+    {
+      "id": "17",
+      "title": "Health Checkup Camp",
+      "subtitle": "Free Medical Camp",
+      "description": "A free health checkup camp will be organized next week. All students are encouraged to participate.",
+      "date": "2024-04-11T09:00:00",
+      "hasAttachment": true,
+      "isUnread": true,
+      "category": "Health"
+    }
   ]
   
